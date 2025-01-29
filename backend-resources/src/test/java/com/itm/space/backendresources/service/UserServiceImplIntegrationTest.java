@@ -131,7 +131,7 @@ public class UserServiceImplIntegrationTest extends BaseIntegrationTest {
         @Test
         @WithMockUser(roles = "MODERATOR")
         void getUserById_WhenUserExists_ShouldReturnUserDetails() throws Exception {
-            UUID userId = UUID.fromString("00741f96-c983-4cc8-beec-750d2320d238");
+            UUID userId = UUID.fromString("d2da91ea-98e9-4361-8c29-da07af4697e1");
 
             mvc.perform(requestToJson(get("/api/users/{id}", userId)))
                     .andExpect(status().isOk());
