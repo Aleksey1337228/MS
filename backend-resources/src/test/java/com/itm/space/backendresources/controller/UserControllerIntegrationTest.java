@@ -188,7 +188,7 @@ public class UserControllerIntegrationTest extends BaseIntegrationTest {
                     .andExpect(jsonPath("$").value("testUser_ITM"));
         }
 
-        //Проверяет, что неавторизованный пользователь получает ошибку 401 Unauthorized
+        //Проверяет, что неавторизованный пользователь получает ошибку 401 Unauthorized1
         @Test
         void shouldReturnUnauthorizedWhenUnauthenticatedUserCallsHelloEndpoint() throws Exception {
             // Выполняем запрос без авторизации и проверяем статус 401
